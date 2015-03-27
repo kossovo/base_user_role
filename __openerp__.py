@@ -39,6 +39,7 @@ In other words, roles make the user's groups *immutable*.
         'base',
     ],
     'data': [
+        'security/ir.model.access.csv',
         'views/role.xml',
         'views/user.xml',
     ],
