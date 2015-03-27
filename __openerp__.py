@@ -54,6 +54,7 @@ are able to add and update user accounts in a scalable and reliable way.
         'base',
     ],
     'data': [
+        'security/ir.model.access.csv',
         'views/role.xml',
         'views/user.xml',
         
