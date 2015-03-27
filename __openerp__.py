@@ -41,7 +41,6 @@ In other words, roles make the user's groups *immutable*.
     'data': [
         'views/role.xml',
         'views/user.xml',
-        
     ],
     'installable': True,
     'auto_install': False,

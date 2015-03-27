@@ -1,5 +1,5 @@
 
-.. image:: https://img.shields.io/badge/licence-GPL--3-blue.svg
+.. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
     :alt: License
 
 User roles
@@ -16,7 +16,7 @@ In other words, roles make the user's groups *immutable*.
 Configuration
 =============
 
-To configure this module, you need to go to *Administration / Users / Roles*,
+To configure this module, you need to go to *Configuration / Users / Roles*,
 and create a new role. From there, you can add groups to compose your role,
 and then associate users to it.
 

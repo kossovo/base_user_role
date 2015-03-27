@@ -20,10 +20,10 @@
 #
 ##############################################################################
 
-from osv import osv, fields
+from openerp.osv import osv, fields
 
 
-class res_users_role(osv.osv):
+class res_users_role(osv.Model):
     _name = 'res.users.role'
     _description = "User role"
 
@@ -65,5 +65,3 @@ class res_users_role(osv.osv):
             user_model.set_groups_from_roles(
                 cr, uid, user_ids, context=context)
         return True
-
-res_users_role()
