@@ -24,14 +24,6 @@
     'name': 'User roles',
     'version': '1.0',
     'category': 'Tools',
-    'description': """This module was written to extend the standard
-functionality regarding users and groups management.
-It helps creating well-defined user roles and associating them to users.
-
-A role is just a collection of groups. When a user is associated to a role,
-its groups will be replaced to the ones configured in the role.
-In other words, roles make the user's groups *immutable*.
-    """,
     'author': 'ABF OSIELL',
     'maintainer': 'ABF OSIELL',
     'website': 'http://www.osiell.com',
