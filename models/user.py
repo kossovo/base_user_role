@@ -41,6 +41,8 @@ class res_users(osv.Model):
         return new_id
 
     def write(self, cr, uid, ids, vals, context=None):
+        if not isinstance(ids, list):
+            ids = [ids]
         res = super(res_users, self).write(
             cr, uid, ids, vals, context=context)
         self.set_groups_from_roles(cr, uid, ids, context=context)
