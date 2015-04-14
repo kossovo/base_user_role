@@ -9,7 +9,8 @@
             <field name="arch" type="xml">
                 <form string="Role">
                     <field name="name"/>
-                    <notebook>
+                    <field name="group_id"/>
+                    <notebook colspan="4">
                         <page string="Groups">
                             <field name="group_ids" nolabel="1"/>
                         </page>

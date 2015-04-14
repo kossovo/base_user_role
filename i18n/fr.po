@@ -40,6 +40,11 @@ msgid "Groups"
 msgstr "Groupes"
 
 #. module: base_user_role
+#: field:res.users.role,group_id:0
+msgid "Associated group"
+msgstr "Groupe associé"
+
+#. module: base_user_role
 #: model:ir.model,name:base_user_role.model_res_users
 #: view:res.users.role:0
 #: field:res.users.role,user_ids:0

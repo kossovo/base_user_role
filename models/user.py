@@ -59,6 +59,7 @@ class res_users(osv.osv):
                 continue
             group_ids = []
             for role in user.role_ids:
+                group_ids.append(role.group_id.id)
                 group_ids.extend([group.id for group in role.group_ids])
             if group_ids:
                 group_ids = list(set(group_ids))    # Remove duplicates IDs
