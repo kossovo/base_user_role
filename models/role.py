@@ -25,10 +25,13 @@ from openerp.osv import osv, fields
 
 class res_users_role(osv.Model):
     _name = 'res.users.role'
+    _inherits = {'res.groups': 'group_id'}
     _description = "User role"
 
     _columns = {
-        'name': fields.char(u"Name", size=128, required=True),
+        'group_id': fields.many2one(
+            'res.groups', required=True, ondelete='cascade',
+            readonly=True, string=u"Associated group"),
         'group_ids': fields.many2many(
             'res.groups',
             'res_users_role_group_rel',
