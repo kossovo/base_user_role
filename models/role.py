@@ -36,6 +36,7 @@ class res_users_role(osv.osv):
             'res.groups',
             'res_users_role_group_rel',
             'role_id', 'group_id',
+            domain="[('id', '!=', group_id)]",
             string=u"Groups"),
         'user_ids': fields.many2many(
             'res.users',
