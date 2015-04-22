@@ -14,7 +14,7 @@
                         </group>
                         <notebook>
                             <page string="Groups">
-                                <field name="group_ids" nolabel="1"/>
+                                <field name="implied_ids" nolabel="1"/>
                             </page>
                             <page string="Users">
                                 <field name="user_ids" nolabel="1"/>
@@ -43,7 +43,7 @@
                 <search string="Roles">
                     <field name="name"/>
                     <field name="user_ids"/>
-                    <field name="group_ids"/>
+                    <field name="implied_ids"/>
                 </search>
             </field>
         </record>
