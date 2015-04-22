@@ -32,7 +32,7 @@ class res_users_role(osv.osv):
         'group_id': fields.many2one(
             'res.groups', required=True, ondelete='cascade',
             readonly=True, string=u"Associated group"),
-        'group_ids': fields.many2many(
+        'implied_ids': fields.many2many(
             'res.groups',
             'res_users_role_group_rel',
             'role_id', 'group_id',

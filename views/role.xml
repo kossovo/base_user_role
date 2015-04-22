@@ -12,7 +12,7 @@
                     <field name="group_id"/>
                     <notebook colspan="4">
                         <page string="Groups">
-                            <field name="group_ids" nolabel="1"/>
+                            <field name="implied_ids" nolabel="1"/>
                         </page>
                         <page string="Users">
                             <field name="user_ids" nolabel="1"/>
