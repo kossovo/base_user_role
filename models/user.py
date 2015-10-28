@@ -22,6 +22,8 @@
 
 from osv import osv, fields
 
+SUPERUSER_ID = 1
+
 
 class res_users(osv.osv):
     _inherit = 'res.users'
@@ -37,7 +39,7 @@ class res_users(osv.osv):
     def create(self, cr, uid, vals, context=None):
         new_id = super(res_users, self).create(
             cr, uid, vals, context=context)
-        self.set_groups_from_roles(cr, uid, [new_id], context=context)
+        self.set_groups_from_roles(cr, SUPERUSER_ID, [new_id], context=context)
         return new_id
 
     def write(self, cr, uid, ids, vals, context=None):
@@ -45,7 +47,7 @@ class res_users(osv.osv):
             ids = [ids]
         res = super(res_users, self).write(
             cr, uid, ids, vals, context=context)
-        self.set_groups_from_roles(cr, uid, ids, context=context)
+        self.set_groups_from_roles(cr, SUPERUSER_ID, ids, context=context)
         return res
 
     def set_groups_from_roles(self, cr, uid, ids, context=None):
